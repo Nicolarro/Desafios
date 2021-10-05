@@ -46,17 +46,6 @@ let cantidad_productos = Number(prompt("Ingrese la cantidad del producto a compr
 
 console.log(cantidad_productos)
 
-/* function elige_productos(cantidad_productos) {
-
-    if (cantidad_productos != ""){
-    
-        cantidad_productos = Number(prompt("Ingrese la cantidad del producto a comprar: "))
-         return cantidad_productos;
-
-     }  
-     console.log(cantidad_productos)
-
-} */
 
 
 /* SELECCIONAR EL TIPO DE PRODUCTO A ELEGIR */
@@ -73,7 +62,7 @@ for (let i= 1; cantidad_productos <5; i++) {
 }
 
 
-let costo_producto;
+let costo_producto = ""
 
 function procesa_productos(){
 if (tipo_productos != ""){
@@ -103,7 +92,7 @@ switch(tipo_productos) {
 }
     /* CALCULAR EL COSTO TOTAL DE LA COMPRA */
 
-    let costo_total;
+    let costo_total =""
 
     function monto () {
          costo_total = (costo_producto * tipo_productos)
