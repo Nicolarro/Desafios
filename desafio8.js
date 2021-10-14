@@ -31,13 +31,15 @@ class Producto {
     
 
     /* USUARIO SELECCIONA LOS PRODUCTOS A COMPRAR  */
-
+    let cantidad_productos;
     let listadoProducto = [];
     
     function listado_productos(cantidad_productos){
     for (let i = 1; i <= cantidad_productos; i++){
 
-    tipo_productos = document.getElementById("tipo").value
+    let cantidad_productos = document.getElementById("cantidad").value
+
+    let tipo_productos = document.getElementById("tipo").value
     
      const eleccion = productos.filter((item) => item.nombre == tipo_productos);
     
@@ -70,7 +72,7 @@ class Producto {
     console.log( tipo_productos);
     }
 
-    boton.addEventListener("click", (e) => {
+    document.getElementById("save").addEventListener("click", (e) => {
         e.preventDefault(), guardarDato()})
     
 
@@ -79,10 +81,11 @@ class Producto {
 
     /* ------INSERCION DE DOM AL HTML--------------------------------------------------- */
 
-    /* SE CREA UN INNER HTML CON LOS PRODUCTOS SELECCIONADOS */
-    for(productos of eleccion)
+/*     /* SE CREA UN INNER HTML CON LOS PRODUCTOS SELECCIONADOS */
+  for(productos of eleccion)
      let caja = document.createElement("div")
-    caja.innerHTML = `<h3>Nombre: ${productos.nombre}</h3>
+
+   caja.innerHTML = `<h3>Nombre: ${productos.nombre}</h3>
                     <h3>Cantidad Comprada: ${cantidad_productos} </h3> `
                     
     document.body.appendChild(caja);
