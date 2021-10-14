@@ -1,4 +1,6 @@
+
 /* CLASE PRODUCTOS CREADA */
+
 class Producto {
     constructor(nombre, categoria, precio) {
     this.nombre = nombre;
@@ -27,6 +29,7 @@ class Producto {
     
     /*------------------------------------------------- SIMULADOR ------------------------------------------------------------------------- *//* -----CALCULAR EL COSTO TOTAL DE LOS PRODUCTOS SELECCIONADOS (PRECIO POR CANTIDAD DEL PRODUCTO), Y MOSTRARLO AL USUARIO--------- */
     
+
     /* USUARIO SELECCIONA LOS PRODUCTOS A COMPRAR  */
 
     let listadoProducto = [];
@@ -53,7 +56,7 @@ class Producto {
 
 
 
-    /* FUNCION QUE GUARDAR EL DATO LOS DATOS INGRESADOS POR EL USUARIO */
+    /* FUNCION QUE GUARDE LOS DATOS INGRESADOS POR EL USUARIO */
     
     const guardarDato = () =>{
 
@@ -61,11 +64,15 @@ class Producto {
     
     let tipo_productos = document.getElementById("tipo").value
 
+    const boton = document.getElementById("save")
+
     console.log(cantidad_productos);
     console.log( tipo_productos);
-}
+    }
 
-    document.getElementById("save").addEventListener("click",()=>{guardarDato()})
+    boton.addEventListener("click", (e) => {
+        e.preventDefault(), guardarDato()})
+    
 
     console.log(guardarDato());
 
@@ -107,8 +114,4 @@ class Producto {
 
     let contenedor = document.createElement("div")
     contenedor.innerHTML = `<h4> Costo Total: ${monto}</h4>`
-    document.body.appendChild(contenedor);                  
-
-
-   
-
+    document.body.appendChild(contenedor)              
