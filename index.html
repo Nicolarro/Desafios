@@ -4,28 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../PreEntregas/scss/stiles.css">
+
+
+    <title>REINA COCINA</title>
 </head>
 <body>
     
 
+    <nav class="navbar navbar-expand-lg navbar-light header--color">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://i.ibb.co/1RDMJgg/Logo-Index.jpg" width="70" height="70" alt="" class="header--color header__logo img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse header--color" id="navbarScroll">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll header--color" style="max-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link header--color" href="index.html" >HOME</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle header--color" href="./sections/productos.html" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                 PRODUCTOS
+                </a>
+                <ul class="dropdown-menu header--color" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item header--color" href="./sections/productos.html">Salados</a></li>
+                  <li><a class="dropdown-item header--color" href="./sections/productos.html">Dulces</a></li>
+                  <li><a class="dropdown-item header--color" href="./sections/productos.html">Personalizados</a></li>
+                </ul>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header--color" href="./sections/contacto.html" >CONTACTO</a>
+            </li>
+        </ul>
+          <form class="d-flex">
+            <input class="form-control mr-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success header--color" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+
 
 <h1> Bienvenido</h1>
-<h2>Desafio Clase 8</h2>
+<h2>Desafio Clase 9</h2>
 <p>Verificar los siguientes datos </p>
 
-<!-- Ingrese la cantidad de productos -->
-<!-- Ingrese el producto a comprar -->
 
 <form action="" method="post">
-    <label for="cantidad">Ingrese la cantidad de Productos</label>
-    <input type="number" id="cantidad" placeholder="Ingresar solo numeros">
+    <label for="nombre">Ingrese el nombre del Producto</label>
+    <input type="text" id="categoria" placeholder="Ingresar la categoria">
 
     <br>
     <br>
     <br>
 
-    <label for="tipo">Ingrese el producto a comprar</label>
+    <label for="tipo">Ingrese el tipo de producto a comprar</label>
     <input type="text" id="tipo" placeholder="Ingrese un producto" >
 
     <br>
@@ -33,11 +78,9 @@
           
     <button type="submit" value="Save" id="save"> Enviar </button>
 
+<script src="desafio9.js"></script>
 
-</form>
-
-
-<script src="desafio8.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 </html>
